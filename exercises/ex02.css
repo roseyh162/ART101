@@ -5,4 +5,16 @@ li {text-align: center;}
 html {font-family: "Mystery Quest";
 background-color: pink;} 
 
-p {}
+
+#pink-huge {width: 150px}
+
+
+
+
+.test-div {
+ background: lemonchiffon;
+ margin: 30px;
+ padding: 40px;
+}
+
+.my-flex {display: flex;} 
