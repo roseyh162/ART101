@@ -2,7 +2,8 @@ body {
     background: #1d1184;
     p{color : pink; font-size: large; }} 
 
-    .profile img {
-    width: 220px;
-    border-radius: 12px;
-}
+img {
+    width: 200px;
+} 
+
+
