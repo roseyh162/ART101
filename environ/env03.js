@@ -1,19 +1,20 @@
-let count = 0 
+
 
 let environmentTitle = "The Mermaid's Adventure";
 
 let environmentElements = ["ocean", "mermaid", "bubbles", "kelp forest"];
 let colors = ["lightblue", "lightgreen", "lightpink", "lightseagreen"];
+let count = 0 
 
-$("#needy-button").click(function () {
+$("#good-button").click(function () {
     count = count + 1;
     let colorCount = count - 1;
 
     if (colorCount < colors.length) {
-        $("#needy-button").html("Clicks: " + count + " Color: " + colors[colorCount]);
+        $("#good-button").html("Clicks: " + count + " Color: " + colors[colorCount]);
         $("body").css("background-color", colors[colorCount]);
     } else {
-        $("#needy-button").after(" The Mermaid's Adventure ");
+        $("#good-button").after(" The Mermaid's Adventure ");
     }
 
     let message = "<p>You clicked me " + count + " times.</p>";
@@ -30,3 +31,20 @@ let mainEntity = {
     favoriteFood: "seaweed",
     favoriteElement: environmentElements[1]
 }    
+
+
+function askNumber(whatNumber) {
+ let userNumber = prompt("What time is it here?");
+ 
+ if (userNumber == whatNumber) {
+$("#output").html("You got it!"); 
+ }
+ else {
+   $("#output").html("Noooooope");
+ }
+} 
+
+$("#good-button") .click(function () {
+askNumber("Always a fun time");
+
+});

@@ -8,11 +8,11 @@
    <!-- Overall title of your page -->
    <title>Creatures Garden</title>
    <!-- Link to external CSS file -->
-   <link rel="stylesheet" href="creature.css">
+   <link rel="stylesheet" href="creatures.css">
    <!-- jQuery library -->
    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
    <!-- Link to external JavaScript file -->
-   <script src="creature.js" DEFER></script>
+   <script src="creatures.js" DEFER></script>
 
 </head>
 
@@ -24,13 +24,22 @@
 <!-- ADD CREATURES TO THE GARDEN -->
 
 <!-- adding creatures -->
-<div id="creature-form">
-    <div>Name: <input type="text" id="crName"> </div>
-    <div> <button id="crAdd">Add Creature</button> </div>
-</div>
+
 
 <!-- showing creatures -->
 <div id="creature-list"> </div>
+
+<div id="creature-form">
+   
+    <div>Color: <input id="crColor" type="color"> </div>
+    <div>Number of eyes:<input type="number" id="crEyesNum" max="5" min="0" 
+        value="1"> </div>
+      <div> <button id="crAdd">Add Creature</button> </div>
+    </div> 
+
+    <!-- showing creatures -->
+<div id="creature-list"> </div>
+
 
 </body>
 
