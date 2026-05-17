@@ -1,49 +1,32 @@
-
-
-
-
-
-
-// add creature to the garden
 $("#crAdd").click( function(){
-
+    
     // grab the value from the text input and assign it to a variable crName
     let crName=$("#crName").val();
     let crColor=$("#crColor").val();
     let crEyesNum=$("#crEyesNum").val();
-    //lets construct html for eyes 
+      // lets construct html for eyes
     let crEyesHtml="";
     for (let i = 0; i < crEyesNum; i++) {
         crEyesHtml=crEyesHtml+ "<div class='eye'>.</div>";
-
     }
-   
+
 
     // test in console
-    console.log(crName);  
+    console.log(crName);
     console.log(crColor); 
-    console.log(crEyesNum); 
-    
+    console.log(crEyesNum);
+    console.log(crEyesHtml);
+
 
     if( crName.length > 2) { 
-           $("#creature-list").append(`
+       $("#creature-list").append(
             <div class="creature">
-                <div class="creature-body" style="background-color: ${crColor}"> B </div>
+                <div class="creature-body" style="background-color: ${crColor}"> ${crEyesHtml} </div>
                 <div class="creature-info">${crName}</div>
             </div>
-        `);
-    } 
-
-
-
-
-       // ("<div>"+crName+crColor+crEyesNum+"</div>");
-    
-   
-
+        );
+    }
      $("#crName").val(""); // write the value
     // $("#crName").val(); // retrieve the value
-
- 
 
 });

@@ -7,6 +7,8 @@ let colors = ["lightblue", "lightgreen", "lightpink", "lightseagreen"];
 let count = 0 
 
 $("#good-button").click(function () {
+    console.log("good-button clicked");
+
     count = count + 1;
     let colorCount = count - 1;
 
