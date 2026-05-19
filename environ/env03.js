@@ -54,12 +54,12 @@ askNumber("Always a fun time");
 
 
 
-$("#creature").click(function () {
+$("#oceancreature").click(function () {
 $(this).toggleClass("transformed");
-  $("#status").text("The creature changed shape.");
+  $("#status").text("The ocean creature changed shape.");
 }); 
 
-$("#creature").hover(
+$("#oceancreature").hover(
   function () {
     $("#thought").stop(true, true).slideDown(300);
      $("#status").text("The creature revealed a thought.");
@@ -77,19 +77,19 @@ $(document).keydown(function (event) {
     if (event.key === " " || event.code === "Space") {
         event.preventDefault();
          following = !following;
-         $("#creature").toggleClass("following");
+         $("# ocean creature").toggleClass("following");
 
              if (following === true) {
-      $("#status").text("The creature is following your cursor.");
+      $("#status").text("The ocean creature is following your cursor.");
     } else {
-      $("#status").text("The creature stopped following you.");
+      $("#status").text("The oceancreature stopped following you.");
     }
     }
 });
 
 $(document).mousemove(function (event) {
  if (following === true) {
-     $("#creature").css({
+     $("#oceancreature").css({
       left: event.pageX - $("#scene").offset().left + 30,
       top: event.pageY - $("#scene").offset().top + 30
     });
