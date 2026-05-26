@@ -23,12 +23,12 @@ $("#needy-button").click(function () {
     // let message = "<p>You clicked me " + count + " times.</p>";
     // message = message + "<p> The Mermaid's Adventure " + mainEntity.favoriteFood + ".</p>";
 
-    $("#output").html("hjhjhj");
+    $("#output").html("The Mermaid's Adventure");
 });
 $("#good-button").click(function () {
     console.log("good-button clicked");
 
-    $("#output").html("hjhjhj");
+    $("#output").html("The Mermaid's Adventure");
 });
 let mainEntity = {
     name: "The Mermaid",
