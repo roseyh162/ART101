@@ -1,5 +1,4 @@
 
-
 let environmentTitle = "The Mermaid's Adventure";
 
 let environmentElements = ["ocean", "mermaid", "bubbles", "kelp forest"];
